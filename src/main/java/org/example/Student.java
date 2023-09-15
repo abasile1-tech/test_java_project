@@ -1,11 +1,18 @@
 package org.example;
 
 public class Student {
-    public static void printNums(){
-        for (int i = 6; i <= 10; i++) {
+    private String studentName;
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
+    public Student(String name) {
+        studentName = name;
+    }
+
+    public void printName() {
+        System.out.println(studentName);
+    }
+
+    public static void printNums() {
+        for (int i = 6; i <= 10; i++) {
             System.out.println("i = " + i);
         }
     }
