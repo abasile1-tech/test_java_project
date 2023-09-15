@@ -11,5 +11,7 @@ public class Main {
 
         Student john = new Student("John");
         john.printName();
+
+        Student.printFizzBuzz();
     }
 }
