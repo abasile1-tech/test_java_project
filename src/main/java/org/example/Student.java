@@ -66,16 +66,13 @@ public class Student {
     // Don't forget the space after the closing parentheses!
     public static String createPhoneNumber(int[] numsList) {
         String phoneNumber = "(";
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 10; i++) {
             phoneNumber += numsList[i];
-        }
-        phoneNumber += ") ";
-        for (int i = 3; i < 6; i++) {
-            phoneNumber += numsList[i];
-        }
-        phoneNumber += "-";
-        for (int i = 6; i < 10; i++) {
-            phoneNumber += numsList[i];
+            if (i == 2) {
+                phoneNumber += ") ";
+            } else if (i == 5) {
+                phoneNumber += "-";
+            }
         }
         return phoneNumber;
     }
