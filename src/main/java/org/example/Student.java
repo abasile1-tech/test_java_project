@@ -36,11 +36,24 @@ public class Student {
     // Spaces will be included only when more than one word is
     // present.
     public static String reverseLongWords(String wordString) {
+        String[] words = wordString.split(" ");
         String reversedString = "";
-        for (int i = wordString.length() - 1; i >= 0; i--) {
-            char c = wordString.charAt(i);
-            reversedString += c;
+
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].length() >= 5) {
+                for (int j = words[i].length() - 1; j >= 0; j--) {
+                    char c = words[i].charAt(j);
+                    reversedString += c;
+                }
+            } else {
+                reversedString += words[i];
+            }
+            if (i < words.length - 1) {
+                reversedString += " ";
+            }
+
         }
+
         return reversedString;
     }
 }

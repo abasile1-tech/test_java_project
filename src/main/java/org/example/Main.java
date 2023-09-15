@@ -14,6 +14,8 @@ public class Main {
 
         Student.printFizzBuzz();
 
-        System.out.println(Student.reverseLongWords("This is a test."));
+        System.out.println(Student.reverseLongWords("Hey fellow warriors"));
+        System.out.println(Student.reverseLongWords("This is a test"));
+        System.out.println(Student.reverseLongWords("This is another test"));
     }
 }
