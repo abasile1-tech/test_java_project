@@ -13,5 +13,7 @@ public class Main {
         john.printName();
 
         Student.printFizzBuzz();
+
+        System.out.println(Student.reverseLongWords("This is a test."));
     }
 }

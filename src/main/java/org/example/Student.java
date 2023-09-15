@@ -28,4 +28,19 @@ public class Student {
             }
         }
     }
+
+    // Write a function that takes in a string of one or
+    // more words, and returns the same string,
+    // but with all five or more letter words reversed
+    // Strings passed in will consist of only letters and spaces.
+    // Spaces will be included only when more than one word is
+    // present.
+    public static String reverseLongWords(String wordString) {
+        String reversedString = "";
+        for (int i = wordString.length() - 1; i >= 0; i--) {
+            char c = wordString.charAt(i);
+            reversedString += c;
+        }
+        return reversedString;
+    }
 }
